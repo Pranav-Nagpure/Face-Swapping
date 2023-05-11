@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+  <title>Face Swapping</title>
+</head>
+
+<body>
+
+  <h1>Face Swapping</h1>
+
+  <form action="/" method="post" enctype="multipart/form-data">
+    <div class="img_div">
+      <div>
+        Upload Source Image
+        <input type="file" accept="image/*" name="src_img_upload" id="src_img_upload" />
+      </div>
+
+      <img class="img" src="{{ src_img }}" width="300" height="300" id="src_img">
+    </div>
+
+    <div class="img_div">
+      <div>
+        Upload Destination Image
+        <input type="file" accept="image/*" name="dest_img_upload" id="dest_img_upload" />
+      </div>
+
+      <img class="img" src="{{ dest_img }}" width="300" height="300" id="dest_img">
+    </div>
+
+    <div class="img_div">
+      <div>
+        <button type="submit" id="submit_button" disabled>Swap Faces</button>
+      </div>
+
+      <img src="{{ result }}" width="300" height="300" id="result_img">
+    </div>
+  </form>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
