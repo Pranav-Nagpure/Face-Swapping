@@ -14,6 +14,8 @@
 
 Visit the <a href="https://face-swap.onrender.com">Web Application</a> deployed on render
 
+Warning: Render does not support dlib
+
 </div>
 
 ## __About__
@@ -56,6 +58,7 @@ conda activate environment_name
 
 4. Install the requirements
 ```sh
+conda install -c conda-forge dlib
 python -m pip install -r requirements.txt
 ```
 
