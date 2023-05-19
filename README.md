@@ -12,10 +12,6 @@
 [![OpenCV][opencv-shield]][opencv-url]
 [![Dlib][dlib-shield]][dlib-url]
 
-Visit the <a href="https://face-swap.onrender.com">Web Application</a> deployed on render
-
-Warning: Render does not support dlib
-
 </div>
 
 ## __About__
